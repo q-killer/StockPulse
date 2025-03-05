@@ -1,3 +1,16 @@
+#!/bin/bash
+
+# Define paths
+WORK_DIR="$HOME/StockTickerFork"
+STOCKS_API="$WORK_DIR/app/src/main/kotlin/com/github/premnirmal/ticker/network/StocksApi.kt"
+
+# Ensure directory exists
+echo "Ensuring Kotlin directory exists..."
+mkdir -p "$(dirname "$STOCKS_API")"
+
+# Recreate StocksApi.kt
+echo "Restoring StocksApi.kt..."
+cat > "$STOCKS_API" << 'EOF'
 package com.github.premnirmal.ticker.network
 
 import android.os.Handler
@@ -86,3 +99,11 @@ class StocksApi : IStocksProvider {
         fetchRunnable?.let { handler.removeCallbacks(it) }
     }
 }
+EOF
+
+# Set permissions
+chmod 644 "$STOCKS_API"
+
+echo "StocksApi.kt has been restored at $STOCKS_API."
+echo "Verifying content (first few lines):"
+head -n 10 "$STOCKS_API"

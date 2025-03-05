@@ -1,3 +1,34 @@
+﻿# StockTickerFork
+A fork of the [Stocks Widget](https://github.com/original/stocks-widget) Android app, enhanced for faster, more reliable stock price updates using free sources.
+
+## Features
+- **Adjustable Polling**: Update intervals of 1, 2, 3, or 5 minutes (vs. original 15-minute fixed interval).
+- **Source Rotation**: Pulls data from 5-7 free stock price sources (e.g., Google Finance, Yahoo Finance, MarketWatch) to avoid rate limits.
+- **Lean Design**: No additional libraries; uses built-in HTTP and regex parsing.
+- **Optional API Keys**: Settings option to add API keys for premium sources (e.g., Finnhub) for advanced users.
+
+## Changes from Original
+- **Polling Logic**: Modified `StockService.java` to support configurable intervals and source rotation.
+- **Data Fetching**: Added `StockFetcher.java` with support for multiple free sources.
+- **Settings UI**: Updated `res/xml/preferences.xml` and `res/values/arrays.xml` for polling options and API key input.
+- **No Bloat**: Kept project size minimal by avoiding external dependencies.
+
+## Setup
+1. Clone the repo: `git clone https://github.com/yourusername/StockTickerFork.git`
+2. Build with Gradle: `./gradlew build`
+3. Install on device/emulator: `adb install app/build/outputs/apk/debug/app-debug.apk`
+
+## Testing
+Tested on a QEMU-based emulator (Android 13, API 33) with polling intervals and source rotation verified.
+
+## Contributing
+Feel free to submit PRs or issues! Focus is on keeping it lightweight and reliable.
+
+## License
+[Same as original, e.g., MIT/Apache 2.0]
+
+ORIGINAL PROJECT CREDIT:  Thank you Prem!  I’m sorry to annoy you with my e-mail a an idiot coder!
+
 # Stocks Widget
 [![Build](https://github.com/premnirmal/StockTicker/workflows/Build/badge.svg)](https://github.com/premnirmal/StockTicker/actions) [![Unit tests](https://github.com/premnirmal/StockTicker/workflows/Run%20unit%20tests/badge.svg)](https://github.com/premnirmal/StockTicker/actions)
 

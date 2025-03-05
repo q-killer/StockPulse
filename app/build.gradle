@@ -108,9 +108,6 @@ android {
     }
   }
 
-  dexOptions {
-    javaMaxHeapSize "2048M"
-  }
 
   buildFeatures {
     viewBinding = true

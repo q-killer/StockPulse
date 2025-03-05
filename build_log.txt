@@ -1,0 +1,59 @@
+
+> Configure project :app
+WARNING: DSL element 'dexOptions' is obsolete and should be removed.
+It will be removed in version 8.0 of the Android Gradle plugin.
+Using it has no effect, and the AndroidGradle plugin optimizes dexing automatically.
+Old git version 3.9.825
+WARNING: BuildType 'debug' is both debuggable and has 'isMinifyEnabled' set to true.
+All code optimizations and obfuscation are disabled for debuggable builds.
+WARNING: BuildType 'debug' is both debuggable and has 'isMinifyEnabled' set to true.
+All code optimizations and obfuscation are disabled for debuggable builds.
+WARNING: BuildType 'debug' is both debuggable and has 'isMinifyEnabled' set to true.
+All code optimizations and obfuscation are disabled for debuggable builds.
+flavour: devDebug
+disabling processDevDebugGoogleServices
+flavour: purefossDebug
+disabling processPurefossDebugGoogleServices
+flavour: devRelease
+disabling processDevReleaseGoogleServices
+flavour: purefossRelease
+disabling processPurefossReleaseGoogleServices
+WARNING: The specified Android SDK Build Tools version (31.0.0) is ignored, as it is below the minimum supported version (34.0.0) for Android Gradle Plugin 8.7.3.
+Android SDK Build Tools 34.0.0 will be used.
+To suppress this warning, remove "buildToolsVersion '31.0.0'" from your build.gradle file, as each version of the Android Gradle Plugin now has a default version of the build tools.
+
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDevDebugBuild UP-TO-DATE
+> Task :app:mergeDevDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:dataBindingMergeDependencyArtifactsDevDebug
+> Task :app:generateDevDebugResValues FROM-CACHE
+> Task :app:generateDevDebugResources
+> Task :app:injectCrashlyticsMappingFileIdDevDebug
+> Task :app:processDevDebugGoogleServices SKIPPED
+
+> Task :app:mergeDevDebugResources FAILED
+ERROR: /home/isaac/StockTickerFork/app/src/main/res/values/strings.xml: Resource and asset merger: Found item String/ok more than one time
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:mergeDevDebugResources'.
+> /home/isaac/StockTickerFork/app/src/main/res/values/strings.xml: Error: Found item String/ok more than one time
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.9/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 3s
+7 actionable tasks: 6 executed, 1 from cache
+
+Publishing a build scan to scans.gradle.com requires accepting the Gradle Terms of Use defined at https://gradle.com/help/legal-terms-of-use. Do you accept these terms? [yes, no] 
