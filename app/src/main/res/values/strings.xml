@@ -226,7 +226,6 @@
   <string name="quote_change_percent_pos">+%1$.2f%%</string>
   <string name="quote_change_percent_neg">%1$.2f%%</string>
    
-    <string name="one_day">One Day</string>
     <string name="one_month">One Month</string>
     <string name="one_year">One Year</string>
     <string name="only_updates_on_weekdays">Only Updates on Weekdays</string>
