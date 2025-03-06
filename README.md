@@ -16,7 +16,7 @@ A fork of [StockTicker](https://github.com/premnirmal/StockTicker) by [q-killer]
 - Fork Baseline: Builds from `q-killer/StockPulse` with `./gradlew build` (environment check).
 - Firebase Optional: Crashlytics/Analytics removed from `app/build.gradle`.
 - Git Versioning: Replaced `git describe` with date-based version (`yyyyMMdd`).
-- Dependency Fix: Removed faulty xpp3 exclude causing resolution errors.
+- Dependency Fix: Excluded xpp3 properly for simplexml converter.
 
 ## Project Layout
 - `app/build.gradle`: Core config (dependencies, build types).
