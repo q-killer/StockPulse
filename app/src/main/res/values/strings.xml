@@ -228,39 +228,18 @@
    
     <string name="one_month">One Month</string>
     <string name="one_year">One Year</string>
-    <string name="only_updates_on_weekdays">Only Updates on Weekdays</string>
     <string name="package_replaced_string">Package Replaced</string>
-    <string name="please_rate">Please Rate</string>
-    <string name="portfolio">Portfolio</string>
-    <string name="privacy_policy">Privacy Policy</string>
-    <string name="refresh_failed">Refresh Failed</string>
-    <string name="refresh_on_screen_unlock">Refresh on Screen Unlock</string>
     <string name="refresh_on_screen_unlock_desc">Update widget when screen unlocks</string>
-    <string name="refresh_updated_message">Refresh Updated</string>
     <string name="remove_holding">Remove Holding</string>
     <string name="remove_prompt">Remove?</string>
-    <string name="round_two_dp">Round to Two Decimals</string>
     <string name="round_two_dp_desc">Display prices with two decimal places</string>
-    <string name="set">Set</string>
     <string name="share_email_subject">Share Stock Ticker</string>
-    <string name="skip">Skip</string>
-    <string name="start_time">Start Time</string>
-    <string name="start_time_updated">Start Time Updated</string>
-    <string name="text_color_updated_message">Text Color Updated</string>
-    <string name="text_size_updated_message">Text Size Updated</string>
     <string name="theme_updated_message">Theme Updated</string>
     <string name="three_month">Three Months</string>
     <string name="ticker_import_fail">Ticker Import Failed</string>
     <string name="ticker_import_success">Ticker Import Successful</string>
-    <string name="total">Total</string>
-    <string name="total_holdings">Total Holdings</string>
     <string name="two_weeks">Two Weeks</string>
-    <string name="update_days">Update Days</string>
     <string name="update_days_desc">Days to check for updates</string>
-    <string name="update_interval">Update Interval</string>
-    <string name="widget_name_updated">Widget Name Updated</string>
-    <string name="widget_width_updated_message">Widget Width Updated</string>
-    <string name="yes">Yes</string>
     <string-array name="poll_intervals">
         <item>1 Minute</item>
         <item>2 Minutes</item>
