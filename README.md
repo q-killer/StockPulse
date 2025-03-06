@@ -16,7 +16,7 @@ A fork of [StockTicker](https://github.com/premnirmal/StockTicker) by [q-killer]
 - Fork Baseline: Builds from `q-killer/StockPulse` with `./gradlew build` (environment check).
 - Firebase Optional: Crashlytics/Analytics removed from `app/build.gradle`.
 - Git Versioning: Replaced `git describe` with date-based version (`yyyyMMdd`).
-- Syntax Issues: Gradle edits need careful block alignment.
+- Syntax Issues: Gradle edits need careful block alignment (e.g., resolutionStrategy).
 
 ## Project Layout
 - `app/build.gradle`: Core config (dependencies, build types).
@@ -47,9 +47,9 @@ ls ~/StockPulse/app/build/outputs/apk/debug/
 ```
 
 ## Status
-- Works: Cloning, basic build with date-based versioning.
+- Works: Cloning, README push, building underway.
 - Doesn’t Work Yet: Polling and rotation not implemented.
 
 ## Next Steps
-- Add polling settings (`prefs.xml`, `arrays.xml`, `RefreshWorker.kt`.
+- Add polling settings (`prefs.xml`, `arrays.xml`, `RefreshWorker.kt`).
 - Implement free source rotation in `StocksApi.kt`.
