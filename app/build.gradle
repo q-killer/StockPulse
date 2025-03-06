@@ -112,10 +112,5 @@ dependencies {
 configurations.all {
     resolutionStrategy {
         force "org.objenesis:objenesis:2.5.1"
-        eachDependency { DependencyResolveDetails details ->
-            if (details.requested.group == "xpp3" && details.requested.name == "xpp3") {
-                details.useTarget null // Exclude xpp3
-            }
-        }
     }
 }
