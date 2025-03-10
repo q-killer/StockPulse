@@ -85,3 +85,4 @@ ls ~/StockPulse/app/build/outputs/apk/debug/
 - Add polling settings (`prefs.xml`, `arrays.xml`, `RefreshWorker.kt`).
 - Implement free source rotation in `StocksApi.kt`.
 - **March 09, 2025**: Fixed kotlin-parcelize error by reordering plugins (com.android.application first).
+- **March 09, 2025**: Fixed Kapt error by adding IStocksProvider.kt to model package.
