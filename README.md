@@ -87,3 +87,4 @@ ls ~/StockPulse/app/build/outputs/apk/debug/
 - **March 09, 2025**: Fixed kotlin-parcelize error by reordering plugins (com.android.application first).
 - **March 09, 2025**: Fixed Kapt error by adding IStocksProvider.kt to model package.
 - **March 10, 2025**: Fixed Analytics and IAppReviewManager symbol errors.
+- **March 10, 2025**: Removed old com.github.premnirmal.ticker references, fixed stubs.
